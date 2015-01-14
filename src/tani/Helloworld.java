@@ -3,7 +3,7 @@ package tani;
 public class Helloworld {
 
 	public static void main(String[] args) {
-		System.out.println("HELOUU MAAILMA");
+		System.out.println("HELLOU MAAAAAAILMA");
 	}
 
 }
