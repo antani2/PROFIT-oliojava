@@ -24,13 +24,13 @@ public class PerusHarjoittelua {
 		double vastaus = lukuA / lukuB;
 		
 		// Tulostetaan konsoliin vastaus
-		System.out.println("lukuA / lukuB = " );
+		System.out.println("lukuA / lukuB = " + vastaus);
 		
 		int lukuC = 9;
 		int lukuD = 2;
 		
 		double vastaus2 = lukuC/lukuD;
-		System.out.println("LukuC / lukuD = ");
+		System.out.println("LukuC / lukuD = " + vastaus2);
 
 		// Aritmeettiset operaatiot
 		

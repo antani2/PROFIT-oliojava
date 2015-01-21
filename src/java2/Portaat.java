@@ -42,7 +42,7 @@ public class Portaat {
      * @param y portaan alkupisteen y
      */
 	public void porrasAlas(EasyWindow window,double x,double y) {
-        
+        //
 	}
 	/**
 	 * Piirtää portaat ylös ja alas
@@ -50,7 +50,7 @@ public class Portaat {
 	 * @param portaidenLkm montako porrasta piirretään ylös ja alas
 	 */
 	public void piirraPortaat (EasyWindow window, int portaidenLkm) {
-		
+		//
 	}
     /**
      * @param args ei kŠytšssŠ

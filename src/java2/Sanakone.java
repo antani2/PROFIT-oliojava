@@ -25,7 +25,7 @@ public class Sanakone {
 		// merkkijono
 		char[] kirjainTaulu = new char[sananPituus];
 		// Alustetaan yksi kirjainmuuttuja isoksi muuttamista varten
-		char kirjain;
+		//char kirjain;
 
 		// Alustetaan laskuri
 		int i = 0;
