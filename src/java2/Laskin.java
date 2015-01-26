@@ -7,7 +7,17 @@ package java2;
  *
  */
 public class Laskin {
-	
+
+	/**
+	 * Summaa kolme lukua
+	 * @param a ensimmäinen luku
+	 * @param b toinen luku
+	 * @param b kolmas luku
+	 * @return lukujen summa
+	 */
+	public int summaa (int a, int b, int c){
+		return a + b + c;
+	}	
 	/**
 	 * Summaa kaksi lukua
 	 * @param a ensimmäinen luku
@@ -15,7 +25,7 @@ public class Laskin {
 	 * @return lukujen summa
 	 */
 	public int summaa (int a, int b){
-		return a + b;
+		return summaa (a,b,0);
 	}
 	
 	/**
@@ -32,6 +42,17 @@ public class Laskin {
 	public void nollaaTaulu (int [] taulu) {
 	    for (int i=0; i<taulu.length;++i)
 	        taulu[i]=0;
+	}
+	
+	/**
+	 * Etsi taulukon pienin alkio
+	 */
+	public int palautaPienin (int [] taulu) {
+		int pienin = taulu[0];
+	    for (int i=1; i<taulu.length;++i)
+	    	if (taulu[i]<pienin)
+	    		pienin = taulu[i];
+	    return pienin;
 	}
 	
 /**
@@ -52,7 +73,12 @@ public class Laskin {
 		//Täytetään taulun pari ekaa alkiota
 		tyhjaTaulu[0] = 100;
 		tyhjaTaulu[1] = 1000;
+		tyhjaTaulu[2] = 2;
+		tyhjaTaulu[3] = 20;
+		tyhjaTaulu[4] = 1234;
 		System.out.println("Indeksissä 0: " + tyhjaTaulu[0] + "\nIndeksissä 1: " + tyhjaTaulu[1]);
+		
+		System.out.println("Talukon pienin arvo " + laskin.palautaPienin(tyhjaTaulu));
 		
 		//Uuden taulukon alustaminen arvoilla
 		int  taulu [] = {4,6};

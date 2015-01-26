@@ -42,7 +42,8 @@ public class Portaat {
      * @param y portaan alkupisteen y
      */
 	public void porrasAlas(EasyWindow window,double x,double y) {
-        //
+        window.addLine (x,y,x,y-1);
+		window.addLine (x,y-1,x+1,y-1);
 	}
 	/**
 	 * Piirtää portaat ylös ja alas
@@ -50,7 +51,17 @@ public class Portaat {
 	 * @param portaidenLkm montako porrasta piirretään ylös ja alas
 	 */
 	public void piirraPortaat (EasyWindow window, int portaidenLkm) {
-		//
+		double x0 = 0.0, y0 = 0.0 ;
+		for (int i = 0; i< portaidenLkm;++i){
+			porras(window, x0, y0);
+			x0 +=1;
+			y0 +=1;
+		}
+		for (int i = 0; i< portaidenLkm;++i){
+			porrasAlas(window, x0, y0);
+			x0 +=1;
+			y0 -=1;
+		}
 	}
     /**
      * @param args ei kŠytšssŠ
@@ -62,8 +73,12 @@ public class Portaat {
         
         
 		portaat.porras (window,0,0);
+		portaat.porras (window,1,1);
+		portaat.porras (window,2,2);
+		portaat.porras (window,3,3);
+		portaat.porras (window,4,4);
 		portaat.porrasAlas(window,5,5);
-		//window.clear();
+		window.clear();
         
 		portaat.piirraPortaat(window,5);
         window.showWindow();

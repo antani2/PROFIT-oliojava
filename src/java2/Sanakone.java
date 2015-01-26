@@ -25,7 +25,7 @@ public class Sanakone {
 		// merkkijono
 		char[] kirjainTaulu = new char[sananPituus];
 		// Alustetaan yksi kirjainmuuttuja isoksi muuttamista varten
-		//char kirjain;
+		char kirjain;
 
 		// Alustetaan laskuri
 		int i = 0;
@@ -36,13 +36,16 @@ public class Sanakone {
 
 			
 			// Jos sanan indeksi on parillinen, niin muutetaan kirjain isoksi ja lis‰t‰‰n tauluun
-				// if () ...
-				// TODOO
+				if (i%2 == 0)
+					kirjain = sana.toUpperCase().charAt(i);
 			
 			// Muuten lis‰t‰‰n kirjain tauluun
-				//else
+				else
+					kirjain = sana.charAt(i);
 				//TODOO
 
+			
+			kirjainTaulu[i] = kirjain;
 			// Kasvatetaan laskuria
 			i++;
 		}
@@ -63,6 +66,12 @@ public class Sanakone {
 		StringBuilder jokatoinen = new StringBuilder("");
 		
 		//TODOOO
+		//jokatoinen.append(merkkijono);
+		for (int i=0;i< merkkijono.length();++i)
+			if (i%2 == 0)
+				jokatoinen.append(merkkijono.toUpperCase().charAt(i));
+			else
+				jokatoinen.append(merkkijono.charAt(i));
 		
 		return jokatoinen.toString();
 	}
