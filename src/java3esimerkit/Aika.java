@@ -26,7 +26,7 @@ public class Aika {
    */
   public Aika(int t, int m, int s) {
     sekunnit = s % 60;
-    m = m + s / 60;
+    //m = m + s / 60;
     minuutit = m % 60;
     tunnit = t + m / 60;
   }

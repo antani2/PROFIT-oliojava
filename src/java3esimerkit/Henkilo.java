@@ -31,7 +31,15 @@ public class Henkilo {
   }
   
   public static void main (String [] args) {
-	  
+      Henkilo hlo1 = new Henkilo("111211-000j");
+      hlo1.setNimi("Pekka");
+      Henkilo hlo2 = new Henkilo("111111-000a");
+      hlo2.setNimi("Leena");
+      hlo1.avioidu(hlo2);
+      System.out.println("Nimi " + hlo1.getNimi());
+      System.out.println("Puoliso " + hlo1.getPuoliso().getNimi());
+      System.out.println("Nimi " + hlo2.getNimi());
+      System.out.println("Puoliso " + hlo2.getPuoliso().getNimi());
   }
   
 }
