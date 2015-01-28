@@ -12,7 +12,7 @@ public class Laskin {
 	 * Summaa kolme lukua
 	 * @param a ensimmäinen luku
 	 * @param b toinen luku
-	 * @param b kolmas luku
+	 * @param c kolmas luku
 	 * @return lukujen summa
 	 */
 	public int summaa (int a, int b, int c){
@@ -46,6 +46,10 @@ public class Laskin {
 	
 	/**
 	 * Etsi taulukon pienin alkio
+	 *  
+	 * @param taulu
+	 * @return pienin 
+	 * 
 	 */
 	public int palautaPienin (int [] taulu) {
 		int pienin = taulu[0];
