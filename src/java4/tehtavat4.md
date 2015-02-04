@@ -15,7 +15,7 @@
 5. Kooste
 6. Kaardinaalisuus
 
-#Neljännen kerran tehtävät#
+#Neljannen kerran tehtavat#
 
 Lämmittely: minkä vuoksi edellisen kerran Henkilö-luokassa oli mahdollista muutta toisen henkilön olion puoliso-attribuuttia
 
@@ -29,13 +29,13 @@ Mitä hyötyä tästä on?
 
 Luo Kuvio niminen luokka, joka määrittelee kuvioiden ominaisuudet (attribuutit ja metodit). Peri Kuviosta Kolmio-luokka, jossa toteutetaan kolmin piirtäminen ruudulle.
 
-Mieti, mitkä ominaisuudet ovat erityisiä kolmiolle ja mitkä kaikille kuvioille samoja.
+Mieti, mitka ominaisuudet ovat erityisia kolmiolle ja mitka kaikille kuvioille samoja.
 
 Mitä hyötyä sitten tästä on?
 
 ##Clash of Shapes##
 
-Tee lisäksi Ympyrä luokka ja mieti sopivat attribuutit ja metodit, että se voidaan piirtää.
+Tee lisäksi Ympyra luokka ja mieti sopivat attribuutit ja metodit, että se voidaan piirtaa.
 
 Muuta Kuvio luokka abstraktiksi, josta peritään kaikille kuvioille yhteiset ominaisuudet
 

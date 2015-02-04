@@ -42,11 +42,22 @@ public class Lumiukko {
 	public void piirraLumiukko(EasyWindow w,double x, double y, double isonPallonSade, double keskipallonSade) {
 
 		piirraLumiukko(w,x, y,isonPallonSade, keskipallonSade, 10);
-	}	
+	}
+   public void piirraLumiukko(EasyWindow w, Piste alkuPiste,double isonPallonSade, double keskipallonSade, double pikkupallonSade) {
+
+        //piirraLumiukko(w,x, y,35, 25, 10);
+        w.addCircle(alkuPiste.getX(),alkuPiste.getY(),isonPallonSade); //piirt‰‰ ison pallon
+        w.addCircle(alkuPiste.getX(),alkuPiste.getY(),keskipallonSade); //piirt‰‰ keskipallon
+        w.addCircle(alkuPiste.getX(),alkuPiste.getY(),pikkupallonSade); //piirt‰‰ pikkupallon
+        
+    }
+
 	
     public static void main(String[] args) {
     	//Luodaan uusi ikkuna
         EasyWindow window = new EasyWindow();
+        Piste alkuPiste= new Piste (100,100);
+        
         
         window.scale(0, 0, 1000, 1000);
         
@@ -54,11 +65,12 @@ public class Lumiukko {
         Lumiukko lumiukko = new Lumiukko ();
         
         // Piirret‰‰n lumiukko (ikkuna, johon piirret‰‰n,x,y,alimman pallon s‰de, keskipallon s‰de, ylimm‰n pallon s‰de)
-        lumiukko.piirraLumiukko(window,100,100,20,20,20);
-        lumiukko.piirraLumiukko(window,200,100);
-        lumiukko.piirraLumiukko(window,400,100,80);
-        lumiukko.piirraLumiukko(window,600,100,80,60);
+        //lumiukko.piirraLumiukko(window,100,100,20,20,20);
+        //lumiukko.piirraLumiukko(window,200,100);
+        //lumiukko.piirraLumiukko(window,400,100,80);
+        //lumiukko.piirraLumiukko(window,600,100,80,60);
         
+        lumiukko.piirraLumiukko(window, alkuPiste, 30, 20, 10);
         
         /**
          *Pist‰ alla olevat toimimaan
