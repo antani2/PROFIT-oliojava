@@ -45,12 +45,26 @@ public class Lumiukko {
 	}
    public void piirraLumiukko(EasyWindow w, Piste alkuPiste,double isonPallonSade, double keskipallonSade, double pikkupallonSade) {
 
+	   Piste pPiste = new Piste();
         //piirraLumiukko(w,x, y,35, 25, 10);
-        w.addCircle(alkuPiste.getX(),alkuPiste.getY(),isonPallonSade); //piirt‰‰ ison pallon
-        w.addCircle(alkuPiste.getX(),alkuPiste.getY(),keskipallonSade); //piirt‰‰ keskipallon
-        w.addCircle(alkuPiste.getX(),alkuPiste.getY(),pikkupallonSade); //piirt‰‰ pikkupallon
+	    //w.addCircle(alkuPiste.getX(),alkuPiste.getY(),isonPallonSade); //piirt‰‰ ison pallon
+        //w.addCircle(alkuPiste.getX(),alkuPiste.getY(),keskipallonSade); //piirt‰‰ keskipallon
+        //w.addCircle(alkuPiste.getX(),alkuPiste.getY(),pikkupallonSade); //piirt‰‰ pikkupallon
+        pPiste = piirraPallo(w,alkuPiste,isonPallonSade);
+        pPiste = piirraPallo(w,pPiste,keskipallonSade);
+        pPiste = piirraPallo(w,pPiste,pikkupallonSade);
+        
         
     }
+   
+	public Piste piirraPallo(EasyWindow w,Piste keskiPiste, double pallonSade) {
+
+		Piste loppuPiste = new Piste();
+		w.addCircle(keskiPiste.getX(),keskiPiste.getY() + pallonSade ,pallonSade); //piirt‰‰ pallon
+		loppuPiste.setX(keskiPiste.getX());
+		loppuPiste.setY(keskiPiste.getY()+ 2*pallonSade);
+		return loppuPiste;
+	}
 
 	
     public static void main(String[] args) {
